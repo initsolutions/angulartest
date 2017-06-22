@@ -5,14 +5,12 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { SharebooksModule } from './new-books/sharebooks.module';
 import { ServiceComponent } from './service/service.component';
-import { NewBooksComponent } from './new-books/new-books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    ServiceComponent,
-    NewBooksComponent
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
