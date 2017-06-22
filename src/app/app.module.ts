@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
-import { NewBooksComponent } from './new-books/new-books.component';
+import { SharebooksModule } from './new-books/sharebooks.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent,
-    NewBooksComponent
+    UsersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharebooksModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
