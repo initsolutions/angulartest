@@ -2,44 +2,8 @@
  Service-User List
 </md-toolbar>
  
-<md-grid-list cols="4" rowHeight="100px" >
+<md-grid-list cols="4" rowHeight="100px">
       <md-grid-tile *ngFor="let user of list">
-          <h3 md-line>{{user.firstName}}</h3> 
+          <h3 md-line>{{user.firstName}}</h3> <br>
       </md-grid-tile>
 </md-grid-list> 
-<form name="userForm">
-	<input type="text" placeholder="name" data-ng-model="name" required="" />
-</form>
-<!-- <md-input-container>
-    <label>Last Name</label>
-    <input mdInput name="lastName" ng-model="lastName" placeholder="Favorite food" required md-maxlength="10" minlength="4" value="">
-    <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
-      <div ng-message="required">This is required!</div>
-      <div ng-message="md-maxlength">That's too long!</div>
-      <div ng-message="minlength">That's too short!</div>
-    </div>
-  </md-input-container> -->
-
-  
-
-<!-- <form name="userForm">
-<md-input-container>
-    <input  name="email" placeholder="Email" data-ng-model="email" required />
-    <div ng-messages="userForm.email.$error">
-      <div ng-message="required">This is required!</div>
-    </div>
-</md-input-container>
-
-<md-input-container>
-    <input name="Password" placeholder="Password" data-ng-model="vm.registerUserData.password" required />
-     <div ng-messages="userForm.Password.$error">
-     <div ng-message="required">This is required!</div>
-     </div>
- </md-input-container>                             
-
- <md-input-container>
-    <md-button id="registerUser" value="Register" class="md-raised md-primary" ng-click="userForm.$valid &&  vm.registerUser()" aria-label="login" ng-disabled="login.loginForm.$invalid()">
-      Create
-     </md-button>
-</md-input-container>
- </form> -->
