@@ -14,20 +14,16 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-
+import { usersModule } from './users/user.module';
 
 
 import 'hammerjs';
-import { UserlistComponent } from './users/userlist.component';
-import { UserdetailsComponent } from './users/userdetails.component';
 //import { RouteModule } from './route/route.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServiceComponent,
-    UserlistComponent,
-    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +31,8 @@ import { UserdetailsComponent } from './users/userdetails.component';
     SharebooksModule,
     HttpModule,
     BrowserAnimationsModule,
-    RouteRoutingModule
+    RouteRoutingModule,
+    usersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

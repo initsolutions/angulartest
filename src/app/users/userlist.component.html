@@ -1,20 +1,43 @@
 <p>
-  userlist works!
+  Userlist Here!
 </p>
 
-<table class="table">
-	<thead>
-		<tr>
-			<td>First Name</td>
-			<td>Last Name</td>
-			<td>Designation</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr *ngFor="let user of userlist">
-			<td>{{user.firstname}}</td>
-			<td>{{user.lastname}}</td>
-			<td>{{user.address}}</td>
-		</tr>
-	</tbody>
-</table>
+<md-input-container>
+  <input mdInput placeholder="Favorite food">
+</md-input-container>
+
+<md-toolbar color="primary">
+    <span>GameViewer</span>
+</md-toolbar>
+
+ <div flex-xs flex-gt-xs="20" layout="column">
+	 <md-card>
+			<md-card-title>
+			    <span class="md-headline">Action buttons</span>
+			</md-card-title>
+		<md-card-content>
+			<table class="table">
+				<thead>
+					<tr>
+						<td>First Name</td>
+						<td>Last Name</td>
+						<td>Designation</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let user of userlist">
+						<td>{{user.firstname}}</td>
+						<td>{{user.lastname}}</td>
+						<td>{{user.address}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<button md-button (click)="openDialog()" layout-align="end">Open dialog</button>
+		</md-card-content>
+	</md-card>
+</div>
+
+
+ 
+
+
