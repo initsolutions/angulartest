@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule, MdDialog, MdButton } from '@angular/material';
-//import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from "ng2-material/all"; 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouteRoutingModule }  from './../app.route';
 

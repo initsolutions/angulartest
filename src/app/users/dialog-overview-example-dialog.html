@@ -2,11 +2,24 @@
   Popup works!
 </p>
 
-<md-input-container>
-  <input mdInput placeholder="Favorite food">
-</md-input-container>
-
- <!-- <md-button class="md-raised md-primary">Primary</md-button> -->
+<table class="table">
+	<thead>
+		<tr>
+		    <td>Id</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Designation</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let user of userlist">
+		    <td>{{user.id}}</td>
+			<td>{{user.firstname}}</td>
+			<td>{{user.lastname}}</td>
+			<td>{{user.address}}</td>
+		</tr>
+	</tbody>
+</table>
 
  <button md-button>OK</button>
  <button md-button>Cancel</button>
