@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { SharebooksModule } from './new-books/sharebooks.module';
 import { ServiceComponent } from './service/service.component';
 import { RouteRoutingModule }  from './app.route';
-
+import { usersModule } from './users/user.module';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
@@ -18,16 +18,12 @@ import 'rxjs/add/operator/catch';
 
 
 import 'hammerjs';
-import { UserlistComponent } from './users/userlist.component';
-import { UserdetailsComponent } from './users/userdetails.component';
 //import { RouteModule } from './route/route.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServiceComponent,
-    UserlistComponent,
-    UserdetailsComponent
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +31,8 @@ import { UserdetailsComponent } from './users/userdetails.component';
     SharebooksModule,
     HttpModule,
     BrowserAnimationsModule,
-    RouteRoutingModule
+    RouteRoutingModule,
+    usersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

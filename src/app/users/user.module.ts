@@ -10,13 +10,11 @@ import { RouteRoutingModule }  from './../app.route';
 
 
 import 'hammerjs';
-import { AppComponent } from './../app.component';
 import { UserlistComponent } from './userlist.component';
 import { UserdetailsComponent } from './userdetails.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     UserlistComponent,
     UserdetailsComponent
   ],
@@ -29,6 +27,5 @@ import { UserdetailsComponent } from './userdetails.component';
     RouteRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class usersModule { }
