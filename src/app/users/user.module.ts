@@ -4,22 +4,20 @@ import { RouterModule } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule } from '@angular/material';
+import { MaterialModule, MdDialog, MdButton } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouteRoutingModule }  from './../app.route';
 
-
 import 'hammerjs';
 import { AppComponent } from './../app.component';
-import { UserlistComponent } from './userlist.component';
+import { UserlistComponent, DialogOverviewExampleDialog } from './userlist.component';
 import { UserdetailsComponent } from './userdetails.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     UserlistComponent,
-    UserdetailsComponent
-  ],
+    UserdetailsComponent,
+    DialogOverviewExampleDialog  ],
   imports: [
     RouterModule,
     BrowserModule,
@@ -27,8 +25,10 @@ import { UserdetailsComponent } from './userdetails.component';
     HttpModule,
     BrowserAnimationsModule,
     RouteRoutingModule
+
   ],
+  //directives: [MdButton],
+  entryComponents: [ DialogOverviewExampleDialog ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class usersModule { }
