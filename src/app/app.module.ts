@@ -15,22 +15,26 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-
+import { usersModule } from './users/user.module';
 
 
 import 'hammerjs';
+
 import { UserlistComponent } from './users/userlist.component';
 import { UserdetailsComponent } from './users/userdetails.component';
 import { EmpDataComponent } from './emp-data/emp-data.component';
+
 //import { RouteModule } from './route/route.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServiceComponent,
+
     UserlistComponent,
     UserdetailsComponent,
     EmpDataComponent
+
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { EmpDataComponent } from './emp-data/emp-data.component';
     SharebooksModule,
     HttpModule,
     BrowserAnimationsModule,
-    RouteRoutingModule
+    RouteRoutingModule,
+    usersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
