@@ -4,6 +4,7 @@ import { MaterialModule } from '@angular/material';
 import { ServiceComponent }  from './service/service.component';
 import { UserlistComponent }  from './users/userlist.component';
 import { UserdetailsComponent }  from './users/userdetails.component';
+import { EmpDataComponent }  from './emp-data/emp-data.component';
 
 export const routes: Routes = [
     { path: 'service', component: ServiceComponent },
@@ -14,6 +15,10 @@ export const routes: Routes = [
      
   {path: 'user',component: UserlistComponent,
     children: [{path: 'userdetails',component: UserdetailsComponent}
+    ]
+  },
+    {path: 'emp-data',component: EmpDataComponent,
+    children: [{path: 'emp-data',component: EmpDataComponent}
     ]
   }
     

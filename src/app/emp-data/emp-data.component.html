@@ -1,0 +1,57 @@
+
+ <md-card class="demo-card demo-basic">
+  <md-toolbar color="primary">Add Employee</md-toolbar>
+  <md-card-content>
+    <form>
+          <table style="width: 95%" cellspacing="0"><tr>
+        <td><i class="material-icons">perm_identity</i></td>
+          <td><md-input-container style="width: 95%">
+            <input mdInput placeholder="First name">
+          </md-input-container>
+        </td>
+        <td>
+          <md-input-container style="width: 95%">
+            <input mdInput placeholder="Last Name">
+          </md-input-container>
+        </td>	
+      </tr></table>
+      <p><i class="material-icons">home</i>
+        <md-input-container>
+          <textarea mdInput placeholder="Address">Dhankawadi Pune</textarea>
+        </md-input-container>
+        <md-input-container>
+          <textarea mdInput placeholder="Address 2"></textarea>
+        </md-input-container>
+      </p>
+      <table style="width: 95%" cellspacing="0"><tr>
+        <td>
+          <md-input-container class="demo-full-width">
+            <input mdInput placeholder="City" value="Pune">
+          </md-input-container>
+        </td>
+        <td>
+          <md-input-container class="demo-full-width">
+            <input mdInput placeholder="State" maxLength="2" value="MH">
+          </md-input-container>
+        </td>
+        <td>
+          <md-input-container class="demo-full-width">
+            <input mdInput #postalCode maxLength="5" placeholder="Postal Code" value="411043"
+                   pattern="[0-9]{5}">
+            <md-hint align="end">
+              <md-icon>mode_edit</md-icon>
+              <span aria-live="polite">{{postalCode.value.length}} / 6</span>
+            </md-hint>
+          </md-input-container>
+        </td>
+      </tr>
+     <tr>
+    <div class="button-row pull-right">
+        <button md-raised-button>Cancel</button>
+        <button md-raised-button>Submit</button>
+    </div>
+      </tr>
+      </table>
+    </form>
+  </md-card-content>
+</md-card>

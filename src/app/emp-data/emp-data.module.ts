@@ -4,31 +4,36 @@ import { RouterModule } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule, MdDialog, MdButton } from '@angular/material';
+import { MaterialModule, MdDialog, MdButton,MdCardModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouteRoutingModule }  from './../app.route';
+import { FormsModule } from '@angular/forms';
+import {MdButtonModule,MdInputModule, } from '@angular/material';
+import {Component} from '@angular/core';
 
 import 'hammerjs';
 import { AppComponent } from './../app.component';
-import { UserlistComponent, DialogOverviewExampleDialog } from './userlist.component';
-import { UserdetailsComponent } from './userdetails.component';
+import { EmpDataComponent } from './emp-data.component';
 
 @NgModule({
   declarations: [
-    UserlistComponent,
-    UserdetailsComponent,
-    DialogOverviewExampleDialog  ],
+    AppComponent,
+   EmpDataComponent
+  ],
   imports: [
     RouterModule,
     BrowserModule,
     MaterialModule,
+    FormsModule,
+    MdCardModule,
+    MdDialog,
+    MdButton,  
     HttpModule,
+    MdButtonModule,
     BrowserAnimationsModule,
     RouteRoutingModule
-
   ],
-  //directives: [MdButton],
-  entryComponents: [ DialogOverviewExampleDialog ],
   providers: [],
+  bootstrap: [AppComponent]
 })
-export class usersModule { }
+export class empDataModule { }
