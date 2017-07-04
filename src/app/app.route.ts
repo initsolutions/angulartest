@@ -12,18 +12,9 @@ export const routes: Routes = [
     { path: '**', redirectTo: 'userlist' },
     { path: 'user/userlist', component: UserlistComponent },
     { path: 'user/userdetails', component: UserdetailsComponent },
-
-    
-  {path: 'user',component: UserlistComponent,
-    children: [{path: 'userdetails',component: UserdetailsComponent}
-    ]
-  },
     {path: 'emp-data',component: EmpDataComponent,
-    children: [{path: 'emp-data',component: EmpDataComponent}
-    ]
-  }
-    
-
+           children: [{path: 'emp-data',component: EmpDataComponent}]
+     }
 ];
 
 export const RouteRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);

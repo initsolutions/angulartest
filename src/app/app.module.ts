@@ -20,8 +20,6 @@ import { usersModule } from './users/user.module';
 
 import 'hammerjs';
 
-import { UserlistComponent } from './users/userlist.component';
-import { UserdetailsComponent } from './users/userdetails.component';
 import { EmpDataComponent } from './emp-data/emp-data.component';
 
 //import { RouteModule } from './route/route.module';
@@ -30,9 +28,6 @@ import { EmpDataComponent } from './emp-data/emp-data.component';
   declarations: [
     AppComponent,
     ServiceComponent,
-
-    UserlistComponent,
-    UserdetailsComponent,
     EmpDataComponent
 
   ],
